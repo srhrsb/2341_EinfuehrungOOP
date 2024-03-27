@@ -7,5 +7,6 @@ public class Main {
 
       Car opel = new Car("Astra", 90);
 
+       bmw.setSeats( 10 );
     }
 }

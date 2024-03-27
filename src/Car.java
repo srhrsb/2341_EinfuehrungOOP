@@ -20,6 +20,22 @@ public class Car{
         this.doors = 3;
     }
 
+    public void setSeats( int seats ){
+
+        if(seats > 8)
+            this.seats = 8;
+        else
+            this.seats = seats;
+    }
+
+    public void setDoors( int doors ){
+        this.doors = Math.clamp(seats, 2, 5);
+    }
+
+
+
+
+
 
 
 }
