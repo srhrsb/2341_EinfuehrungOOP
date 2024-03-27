@@ -30,15 +30,15 @@ public class Main {
         //1.Aufgabe: Auto finden
         Car currentCar = null;
 
-        for( Car car : cars){
-            if(car.getName() == command[0]){
-                  currentCar = car;
+        for( int i = 0; i< cars.length; i++){
+
+            var carName = cars[i].getName();
+
+            if( carName.equals(command[0]) ){
+                //Auto gefunden
+                currentCar = cars[i];
             }
         }
-
-
-
-
-
+        System.out.println("Aktuelles Auto: "+currentCar.getName());
     }
 }
