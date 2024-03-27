@@ -20,6 +20,7 @@ public class Car{
         this.doors = 3;
     }
 
+    //setter-------------------------------------------------------------------
     public void setSeats( int seats ){
 
         if(seats > 8)
@@ -29,7 +30,38 @@ public class Car{
     }
 
     public void setDoors( int doors ){
-        this.doors = Math.clamp(seats, 2, 5);
+        this.doors = Math.clamp(doors, 2, 5);
+    }
+
+    //getter--------------------------------------------------------
+
+    /**
+     * Gibt die Anzahl der Türen des Fahrzeugs zurück
+     * @return int - Anzahl der Türen
+     */
+    public int getDoors(){
+        System.out.println("Wert der Türanzahl abgefragt");
+        return this.doors;
+    }
+
+    public String getName(){
+        return this.name;
+    }
+
+    //functions---------------------------------------------------
+
+    /**
+     * Weist das Fahren des Autos an
+     */
+    public void drive(){
+        System.out.println("Das Auto "+name + "fährt");
+    }
+
+    /**
+     * Weist das Anhalten des Autos an
+     */
+    public void stop(){
+        System.out.println("Das Auto "+name +"hält an");
     }
 
 
